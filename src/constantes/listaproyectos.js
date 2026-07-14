@@ -1,8 +1,12 @@
+import pokedexImg from "../assets/proyectos/pokedex.jpg";
+import nexosImg from "../assets/proyectos/nexos.jpg";
+import tareasImg from "../assets/proyectos/tareas.jpg";
+import rickAndMortyImg from "../assets/proyectos/rickandmorty.jpg";
+
 const proyectos = [
   {
     name: "Pokedex con base de datos",
-    imagen:
-      "https://1drv.ms/i/s!Aqt7qbJii_4_gZmePjdbcx-8xddU6_k?embed=1&width=1904&height=925",
+    imagen: pokedexImg,
 
     postgreSQL:
       "https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png",
@@ -14,8 +18,7 @@ const proyectos = [
 
   {
     name: "Pagina Nexos",
-    imagen:
-      "https://1drv.ms/i/s!Aqt7qbJii_4_gZjdYVTSGeQW-6vuFYs?embed=1&width=1920&height=933",
+    imagen: nexosImg,
 
     descripcion: "Maquetacion para la empresa Nexos ",
     GitHub: "https://github.com/iAGuss/Projecto-html_css_js-pasado-a-react",
@@ -23,8 +26,7 @@ const proyectos = [
 
   {
     name: "Lista de tareas",
-    imagen:
-      "https://1drv.ms/i/s!Aqt7qbJii_4_gZjbUR3YAwPEYEzRQc4?embed=1&width=1915&height=934",
+    imagen: tareasImg,
 
     descripcion:
       "Creacion de lista de tareas segun que importancia debas hacer tu tarea ademas de poder borrar las tareas ya completadas",
@@ -33,10 +35,9 @@ const proyectos = [
 
   {
     name: "Rick and Morty",
-    imagen:
-      "https://1drv.ms/i/s!Aqt7qbJii_4_gZjbTwqeNnKHX6zBESc?embed=1&width=1882&height=933",
+    imagen: rickAndMortyImg,
     descripcion:
-      "Consumó de api  de Rick and Morty ademas de uso de Paginacion y Boostrap",
+      "Consumo de la API de Rick and Morty, ademas de uso de paginacion y Bootstrap",
     GitHub: "https://iaguss.github.io/Api-Rick-and-Morty/",
   },
 ];

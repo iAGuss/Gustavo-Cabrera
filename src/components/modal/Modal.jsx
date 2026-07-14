@@ -1,5 +1,4 @@
-import React from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./modal.css";
@@ -13,23 +12,25 @@ function Modal({ closeModal }) {
     const notify = () => toast("Mensaje enviado!");
 
     if (user_name && user_mail && user_message) {
+      const form = e.target;
       emailjs
         .sendForm(
-          "service_pptd61s",
-          "template_hj4jtdu",
-          e.target,
-          "h6nLxn0VaIHERZe0f"
+          "service_6xk27oi",
+          "template_9wswyz9",
+          form,
+          "0yRaoa9sZxCiCPwjB"
         )
         .then(
           (result) => {
             console.log(result.text);
             notify();
+            form.reset();
           },
           (error) => {
             console.log(error.text);
+            toast.error("Hubo un error al enviar el mensaje. Intenta nuevamente.");
           }
         );
-      e.target.reset();
     } else {
       alert("Por favor complete todos los campos.");
     }

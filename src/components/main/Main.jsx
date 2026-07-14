@@ -1,7 +1,4 @@
-import React from "react";
-
 import "./main.css";
-import foto from "../../assets/fotoperfil.jpg";
 import fotocaricaturizada from "../../assets/ME-caricaturizado.jpg";
 
 import Cv from "../../assets/Curriculum-Gustavo-Cabrera .pdf";
@@ -48,7 +45,14 @@ const Main = () => {
       </div>
 
       <div className="imagen-precentacion">
-        <img className="mi-foto" src={fotocaricaturizada} alt="" />
+        <img
+          className="mi-foto"
+          src={fotocaricaturizada}
+          alt="Foto de perfil de Gustavo Cabrera"
+          width="1024"
+          height="1024"
+          decoding="async"
+        />
         <span className="link-social">
           <button className="Descargar-cv">
             <a href={Cv} download="Curriculum-Gustavo-Cabrera">

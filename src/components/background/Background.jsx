@@ -1,4 +1,3 @@
-import React from "react";
 import "./background.css";
 function background() {
   return (

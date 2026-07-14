@@ -1,4 +1,3 @@
-import React from "react";
 import Aos from "aos";
 import "./proyectos.css";
 import Cartap from "../cartaproyectos/Cartap";
